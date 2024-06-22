@@ -10,7 +10,7 @@ function Products({ user }) {
     product.name.toLowerCase().includes(search.toLowerCase())
   );
 
-  // if (!user) return <Navigate to="/signup" />;
+  if (!user) return <Navigate to="/signup" />;
 
   return (
     <div>
